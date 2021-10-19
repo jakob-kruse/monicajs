@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "prettier",
+    "plugin:jest/all",
+    "plugin:import/recommended"
+  ],
+  "plugins": ["prettier", "jest", "import"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "import/prefer-default-export": "off",
+    "jest/prefer-expect-assertions": ["warn", { "onlyFunctionsWithAsyncKeyword": true }],
+    "jest/consistent-test-it": ["warn", { "fn": "test" }],
+    "jest/prefer-lowercase-title": ["off"]
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  }
+}

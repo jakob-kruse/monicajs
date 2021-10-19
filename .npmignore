@@ -1,0 +1,12 @@
+coverage/
+.github/
+.husky/
+test/
+docs/
+.prettierrc.json
+.eslintrc.json
+jest.config.js
+.eslintignore
+tsconfig.json
+yarn.lock
+.env
